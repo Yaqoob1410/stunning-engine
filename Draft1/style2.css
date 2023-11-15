@@ -1,0 +1,480 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-logo {
+    height: 40px; /* Set the initial height */
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth scaling */
+}
+
+.nav-logo:hover {
+    transform: scale(1.2); /* Scale the logo on hover */
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+li a img {
+    height: 40px;
+}
+
+.bar {
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+}
+
+
+.hero {
+    background-image: url('Images/portfolio_pic_edit.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    background-position-x: 50px;
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+    position: relative; /* Add this line to set .hero-content's position relative to the hero */
+
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .hero {
+        background-position: center;
+        background-position-y: 50px;
+        background-position-x: 20px;
+    }
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -90%);
+    text-align: right; /* Align text and button to the right */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero-socials {
+    padding: 20px;
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+/* Add this CSS code to your style2.css file or in the head of your HTML document */
+
+
+.about {
+    background-color: #f8f8f8; /* Background color for the About section */
+    padding: 50px 0; /* Add some padding for better spacing */
+
+    /* Center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+}
+
+.about-content {
+    max-width: 800px; /* Limit the width of the content */
+    display: flex; /* Use flexbox to align image and text */
+    align-items: center; /* Align items vertically in the flex container */
+    justify-content: center; /* Center the content horizontally */
+    text-align: left; /* Align text to the left */
+}
+
+.about-content p {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    color: #666; /* Text color */
+    line-height: 1.6; /* Set line height for better readability */
+    margin-left: 20px; /* Add some space between the image and text */
+}
+
+.projects h1 {
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.cards {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 30%;
+    border-radius: 5px;
+    margin: 40px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+
+.image img{
+    width: 100%;
+    margin: 5px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.des {
+    text-align: center;
+}
+
+.des p {
+    line-height: 1.8em;
+    padding-bottom: 10px;
+}
+
+.des img {
+    border-radius: 5px;
+    height: 60px;
+    padding: 3px;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out; /* Add transition for height */
+}
+
+.des img:hover {
+    transform: rotate(360deg) scale(1.2); /* Apply both rotation and scaling on hover */
+}
+
+.button-container {
+    margin-bottom: 10px; /* Adjust as needed */
+    margin-top: 15px; /* Adjust as needed */
+
+}
+
+.button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit; /* Use the button's text color */
+}
+
+.button:hover {
+    background-color: #3367d6;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+/* ... Your existing styles ... */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Add styles for the contactForm */
+#contactFormContainer {
+    text-align: center; /* Center the text */
+}
+
+#contactForm {
+    width: 60%; /* Adjust the width as needed */
+    max-width: 400px; /* Add a max-width for responsiveness */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    color: #333;
+}
+
+
+.about {
+    padding: 20px 0; /* Reduce the padding on the top and bottom */
+    background-color: #f9f9f9;
+    margin-bottom: 20px; /* Reduce the margin between sections */
+}
+
+.projects {
+    padding: 20px 0; /* Reduce the padding on the top and bottom */
+}
+
+.container {
+    padding-bottom: 30px; /* Increase the padding between the contact section and footer */
+}
+
+#download-btn {
+
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#download-btn:hover {
+    background-color: #3367d6;
+}
+
+
+/* ... (your existing styles) ... */
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+
+    /* Navbar styles */
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    /* Hero styles */
+    .hero-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    /* About section styles */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Projects section styles */
+    .main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Contact Me section styles */
+    #contactForm {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Footer styles */
+    footer {
+        padding: 10px 0;
+    }
+
+}
