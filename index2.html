@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">S.A</div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://linkedin.com/in/syed-yaqoob-ali-908586214"><img class="nav-logo" src="Images/icons8-linkedin-50 (1).png" alt=""></a></li>
+                <li><a href="https://github.com/Yaqoob1410?tab=repositories"><img class="nav-logo" src="Images/icons8-github-64.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm Syed Ali, <br> Welcome to my Portfolio</h1>
+                <p>Front End Developer</p>
+                <a href="/Draft1/Images/Syed Yaqoob Ali CV.pdf" download="your-cv.pdf"><button>Download CV</button></a>
+                <button onclick="scrollToProjects()">View Projects</button>
+                <div class="hero-socials">
+                    <a href="www.linkedin.com/in/syed-yaqoob-ali-908586214"><img src="Images/icons8-linkedin-50.png" alt=""></a>
+                    <a href="https://github.com/Yaqoob1410?tab=repositories"><img src="Images/icons8-github-48.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Welcome to my portfolio! I'm Syed Ali, a passionate software developer with a strong foundation in web development. 
+                I love transforming ideas into efficient and elegant solutions. My skills include HTML, CSS, JavaScript, MySQL, and Python. 
+                After completing a software developer bootcamp, I discovered a profound passion for coding that ignited a desire to pursue a 
+                career in software development. The immersive nature of the bootcamp not only equipped me with practical coding skills but also 
+                provided insights into the dynamic and creative aspects of programming. Engaging in real-world projects and overcoming coding challenges 
+                fueled my enthusiasm, transforming coding from a learning necessity to a fulfilling passion.
+                The bootcamp experience helped me appreciate the problem-solving potential of coding and its applications across diverse industries. 
+                The thrill of seeing lines of code materialize into functional software and the continuous learning journey in the ever-evolving tech 
+                landscape resonated deeply with me. Eager to contribute to innovative solutions and driven by the joy of coding, I am now on a dedicated 
+                path to building a rewarding career as a software developer, ready to tackle new
+                challenges and make a meaningful impact in the world of technology.</p>
+        </div>
+    </section>
+
+<section class="projects" id="projects">
+    <h1>Portfolio</h1>
+    <div class="main">
+        <div class="cards">
+            <div class="image">
+                <img src="Images/To-do-list.png" alt="Project 1">
+            </div>
+            <div class="title">
+                <h1>To Do List</h1>
+            </div>
+            <div class="des">
+                <p>A web application that allows users to create and manage their tasks while saving the data in the local 
+                    storage of the user's browser. This feature ensures that task lists are retained even after the browser is closed and reopened.</p>
+                <p>-- Technologies used --</p>
+                <img src="Images/html.png" alt="">
+                <img src="Images/css.png" alt="">
+                <img src="Images/javascript.png" alt="">
+                <div class="button-container">
+                    <button class="button"><a href="to-do-list/index.html">View Project</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <img src="Images/Khaleeji-Cart.png" alt="Project 1">
+            </div>
+            <div class="title">
+                <h1>Ecommerce Cart</h1>
+            </div>
+            <div class="des">
+                <p>A user-friendly web application that allows the user to add, remove, multiply and purchase the items in the store,
+                     predominantly showcasing the use of JavaScript by the interactive nature of the cart.</p>
+                <p>-- Technologies used --</p>
+                <img src="Images/html.png" alt="">
+                <img src="Images/css.png" alt="">
+                <img src="Images/javascript.png" alt="">
+                <div class="button-container">
+                    <button class="button"><a href="Shopping cart/store.html">View Project</a></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cards">
+            <div class="image">
+                <img src="Images/weatherApp.png" alt="Project 1">
+            </div>
+            <div class="title">
+                <h1>Weather App</h1>
+            </div>
+            <div class="des">
+                <p>The WeatherApp is a user-friendly web application that provides real-time weather information to users based on the location they input. 
+                    With the use of HTML, CSS, and JavaScript in integration with the OpenWeatherMap API to deliver accurate and up-to-date weather forecasts.</p>
+                <p>-- Technologies used --</p>
+                <img src="Images/html.png" alt="">
+                <img src="Images/css.png" alt="">
+                <img src="Images/javascript.png" alt="">
+                <div class="button-container">
+                    <button class="button"><a href="Weather App/index.html">View Project</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="image">
+                <img src="Images/Footy-live-score.png" alt="Project 1">
+            </div>
+            <div class="title">
+                <h1>Football Live Score</h1>
+            </div>
+            <div class="des">
+                <p>Tasked to create a landing page of my choice using only HTML and CSS I had to accurately represent the page I was creating. 
+                    This project taught me the different types of display properties and how to utilize them to reproduce existing layouts.</p>
+                <p>-- Technologies used --</p>
+                <img src="Images/html.png" alt="">
+                <img src="Images/css.png" alt="">
+                <img src="Images/javascript.png" alt="">
+                <div class="button-container">
+                    <button class="button"><a href="footy app/index.html">View Project</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="image">
+                <img src="Images/replit.png" alt="Project 1">
+            </div>
+            <div class="title">
+                <h1>DataBase On Replit</h1>
+            </div>
+            <div class="des">
+                <p>Database on Replit, using Python,
+                    https://replit.com/@yaqoobsya1410/PythonDB</p>
+                <p>-- Technologies used --</p>
+                <img src="Images/html.png" alt="">
+                <img src="Images/css.png" alt="">
+                <img src="Images/python.png" alt="">
+                <img src="Images/MySQL.png" alt="">
+                <div class="button-container">
+                    <button class="button"><a href="Python/PortfolioPython/index.html">View Project</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="image">
+                <img src="Images/DisneySS.png" alt="Project 1">
+            </div>
+            <div class="title">
+                <h1>Disney Clone</h1>
+            </div>
+            <div class="des">
+                <p>Tasked to create a landing page of my choice using only HTML and CSS I had to accurately represent the page I was creating. 
+                    This project taught me the different types of display properties and how to utilize them to reproduce existing layouts.</p>
+                <p>-- Technologies used --</p>
+                <img src="Images/html.png" alt="">
+                <img src="Images/css.png" alt="">
+                <div class="button-container">
+                    <button class="button"><a href="#">View Project</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info" id="contact">
+                <p>Email: yaqoob.sya1410@hotmail.com</p>
+                <p>LinkedIn: www.linkedin.com/in/syed-yaqoob-ali-908586214</p>
+                <p>GitHub: <a href="https://github.com/Yaqoob1410?tab=repositories" target="_blank"></a>https://github.com/Yaqoob1410?tab=repositories</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Syed Yaqoob Ali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>   
+
+    <script>
+        function scrollToProjects() {
+            document.getElementById('projects').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function toggleMenu() {
+            var navList = document.querySelector('.nav-list');
+            navList.classList.toggle('show');
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            // Form fields
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Simple form validation
+            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Display confirmation message
+            var confirmationMessage = document.getElementById('confirmationMessage');
+            confirmationMessage.textContent = `Thank you, ${name}! Your message has been received.`;
+
+            // Clear form fields
+            document.getElementById('contactForm').reset();
+        }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            if (slideIndex >= slides.length) { slideIndex = 0 }
+            if (slideIndex < 0) { slideIndex = slides.length - 1 }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+            slideIndex++;
+            setTimeout(showSlides, 5000); // Change slide every 2 seconds
+        }
+
+    </script>
+</body>
+
+</html>
+

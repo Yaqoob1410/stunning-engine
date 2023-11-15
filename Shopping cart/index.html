@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khaleeji</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&family=Open+Sans:ital,wght@1,300&family=Saira+Condensed&display=swap');
+
+        /* Add your additional styles here */
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .slideshow-img {
+            width: 100%;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .category-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .category-card {
+            width: 30%;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .category-img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .category-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>Khaleeji</h1>
+        </div>
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section container hero-section">
+        <h1>THE LATEST IN KHALEEJI</h1>
+        <h4>CLASSY MODEST ESSENTIAL</h4>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img class="slideshow-img" src="images/slideshow1.jpg" alt="Slideshow 1">
+            </div>
+
+            <div class="mySlides">
+                <img class="slideshow-img" src="images/slideshow2.jpg" alt="Slideshow 2">
+            </div>
+
+            <div class="mySlides">
+                <img class="slideshow-img" src="images/slideshow3.jpg" alt="Slideshow 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section container category-section">
+        <div class="category-card">
+            <img class="category-img" src="images/category1.jpg" alt="Category 1">
+            <h2 class="category-title">Category 1</h2>
+            <!-- Add category-specific details or links if needed -->
+        </div>
+
+        <div class="category-card">
+            <img class="category-img" src="images/category2.jpg" alt="Category 2">
+            <h2 class="category-title">Category 2</h2>
+            <!-- Add category-specific details or links if needed -->
+        </div>
+
+        <div class="category-card">
+            <img class="category-img" src="images/category3.jpg" alt="Category 3">
+            <h2 class="category-title">Category 3</h2>
+            <!-- Add category-specific details or links if needed -->
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/social-icon1.png" alt="Social Media 1">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/social-icon2.png" alt="Social Media 2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/social-icon3.png" alt="Social Media 3">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Add your JavaScript for the slideshow here
+    </script>
+</body>
+</html>
