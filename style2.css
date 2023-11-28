@@ -114,15 +114,107 @@ li a img {
     position: relative; /* Add this line to set .hero-content's position relative to the hero */
 
 }
-
 /* Add a media query for smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .hero {
+        background-image: none;
+        padding: 0;
+        height: 90vh;
+    }
+
+    .hero-content {
+        max-width: 667px;
+        position: absolute;
+        bottom: -10%; /* Adjust the top value to move content up */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Adjust font size for better readability on mobile */
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+        line-height: 40px;
+        text-align: center; /* Center text on smaller screens */
+    }
+    .br{
+        display: block;
+    }
+
+}
+
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .hero {
+        /* Adjust hero section styles accordingly for iPad Portrait */
         background-position: center;
         background-position-y: 50px;
         background-position-x: 20px;
     }
+
+    .hero-content {
+        /* Adjust hero content styles accordingly for iPad Portrait */
+        max-width: 667px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -90%);
+        text-align: right;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .hero p {
+        margin: 10px 0;
+    }
+
+    .hero-socials {
+        padding: 20px;
+    }
 }
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+    .hero {
+        /* Adjust hero section styles accordingly for iPad Landscape */
+        background-position: center;
+        background-position-y: 50px;
+        background-position-x: 20px;
+    }
+
+    .hero-content {
+        /* Adjust hero content styles accordingly for iPad Landscape */
+        max-width: 667px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -90%);
+        text-align: right;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .hero p {
+        margin: 10px 0;
+    }
+
+    .hero-socials {
+        padding: 20px;
+    }
+}
+
 
 .hero-content {
     max-width: 600px;
@@ -141,6 +233,11 @@ li a img {
     text-align: left;
 }
 
+.h1-break {
+    display: none;
+
+}
+
 .hero p {
     margin: 10px 0;
 }
@@ -149,6 +246,17 @@ li a img {
     padding: 20px;
 }
 
+.techs img {
+    height: 50px;
+    margin: 10px;
+    padding-bottom: 20px;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out; /* Add transition for height */
+
+}
+
+.techs img:hover {
+    transform: scale(1.2); 
+}
 button {
     background-color: #4285f4;
     color: #fff;
