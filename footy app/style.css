@@ -113,3 +113,42 @@ h1 {
     justify-items: flex-start;
     color: #555; /* Medium gray match time color */
 }
+
+/* Add this at the end of your existing CSS */
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .title-box {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .team {
+        width: 100%; /* Make team containers full width on smaller screens */
+        margin-bottom: 10px; /* Add some spacing between team elements */
+    }
+
+    .team img {
+        width: 100%; /* Make team logos fill the container */
+        max-width: 100px; /* Set a maximum width for team logos */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .match-tile img {
+        width: 100%; /* Make match logos fill the container */
+        max-width: 60px; /* Set a maximum width for match logos */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .match-tile {
+        flex-direction: column; /* Stack match tiles vertically on smaller screens */
+    }
+
+    .match-tile .team {
+        width: 100%; /* Make team containers full width on smaller screens */
+        align-self: center; /* Center align team elements */
+    }
+}
