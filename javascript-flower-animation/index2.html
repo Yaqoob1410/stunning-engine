@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <script src="script2.js" defer></script>
+  <title>Valentine's Day</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      overflow: hidden; /* Hide overflow to prevent scrollbars */
+    }
+
+    .centered {
+      margin-top: 50px;
+      position: relative;
+      z-index: 1; /* Set z-index to place it above the canvas */
+    }
+
+    .signature {
+      z-index: 1; /* Set z-index to place it above the canvas */
+    }
+
+    canvas#alx {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0; /* Set z-index to place it behind other elements */
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="alx"></canvas>
+
+  <div class="centered">
+    <h4>Will you be My Valentine?</h4>
+
+    <input class="no" type="checkbox" name="answer" id="No">
+    <label class="no" for="No">No</label>
+
+    <input class="yes" type="checkbox" name="answer" id="Yes">
+    <label class="yes" for="Yes">Yes</label>
+
+    <div class="answer--yes"></div>
+    <div class="answer--no"></div>
+  </div>
+
+
+</body>
+</html>
