@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Varela Round', 'Quicksand', sans-serif;
+            background-color: #800020;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .postcard {
+            width: 800px;
+            height: 500px;
+            background-color: #f7f7f7;
+            margin: 0 auto;
+            border-radius: 2%;
+            display: flex;
+            justify-content: space-between;
+            padding: 3em;
+            box-shadow: .8em .8em 15px rgba(0,0,0,.3);
+            -ms-transform: rotate(2.5deg);
+            -webkit-transform: rotate(2.5deg);
+            transform: rotate(2.5deg);
+            -moz-transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 5em;
+            color: #f7f7f7;
+            margin-bottom: -15px;
+        }
+
+        p {
+            display: inline;
+            font-size: 1.3em;
+        }
+
+        .postcard:hover,
+        .postcard:active,
+        .postcard:focus{
+            -ms-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -moz-transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+
+        .mail_stamp {
+            width: 100px;
+            float: right;
+        }
+
+        #address {
+            text-decoration: underline;
+        }
+
+        /*form*/
+        input,
+        textarea {
+            border: none;
+            border-radius: 4%;
+            height: 1.9em;
+            padding: .7em;
+            font-size: 1.3em;
+            font-family: 'Varela Round', 'Quicksand', sans-serif;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline-color: pink;
+        }
+
+        .mail_stamp {
+            width: 100px;
+            float: right;
+        }
+
+        textarea {
+            overflow: auto;
+            resize: none;
+            height: 10em;
+            width: 17em;
+            margin-top: .5em;
+            margin-bottom: 1em;
+        }
+
+        .push{
+            margin-bottom: 1em;
+            margin-top: .5em;
+        }
+
+        .accept-decline {
+            margin-top: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            margin-right: 1em;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            border: none;
+            border-radius: 4%;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        #accept {
+            background-color: #4CAF50; /* Green */
+        }
+
+        #decline {
+            background-color: #f44336; /* Red */
+        }
+
+        /*footer*/
+        footer {
+            margin: 2em auto;
+            text-align: center;
+            font-family: 'Varela Round', 'Quicksand', sans-serif;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>V-Day Inv</h1>
+        <div class="postcard">
+            <div class="letter">
+                <form action="#" method="post" class="message_form">
+                    <p class="push">Dear Lengest Girl In The Dunya,</p><br><br>
+                    <p id="message" name="message_to_recipient">
+                        Invitation to join me for a day together, let's create memories that will last a lifetime. <br> <br>
+                        The day will feature: <br>
+                        A cafe date where we: <br>
+                        - Building a lego rose bouquet together, flowers for you to keep forever. <br>
+                        - Working on our scrapbook together. <br>
+                        - Eating good food. <br>
+                        Your presence is the greatest gift I could ever wish for on this day, and I can't wait to share it with you.
+                    </p><br>
+                </form>
+            </div>
+            <div class="address">
+                <img src="http://i44.photobucket.com/albums/f9/dandee114/stamp_zpsvbuxiwih.png" class="mail_stamp">
+                <form action="#" method="post" class="message_form">
+                    <input type="email" id="recipient_email" name="recipient_email" placeholder="prettylilthing@example.com">
+                </form>
+                <p id="address">From,<br>
+                    Yaqs<br>
+                    AKA big bundas man
+                </p>
+                <div class="accept-decline">
+                    <button class="button" id="accept" onclick="redirectToAnotherPage()">Accept</button>
+                    <button class="button" id="decline">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script>
+        function redirectToAnotherPage() {
+            // Replace 'another_page.html' with the actual HTML page you want to redirect to
+            window.location.href = 'sending.html';
+        }
+    </script>
+</body>
+</html>
