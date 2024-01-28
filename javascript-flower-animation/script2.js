@@ -86,6 +86,6 @@ setInterval(function () {
 document.getElementById('Yes').addEventListener('change', function () {
   if (this.checked) {
       // Redirect to another HTML file or perform any other action
-      window.location.href = 'index.html';
+      window.location.href = 'practice.html';
   }
 });
